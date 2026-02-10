@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="From Motion Tracking to Versatile Humanoid Control via Guided Diffusion">
+  <meta name="description" content="Learning Adaptive High-Platform Traversal for Humanoid Robots">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BeyondMimic</title>
-
+  
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
 
@@ -28,20 +28,21 @@
   <section class="hero is-link is-fullheight video" style="overflow: hidden; position:relative;">
     <div class="hero-video" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 101%; height: 101%;">
       <video playsinline autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
-        <source src=" ./static/videos/teaser.mp4" type="video/mp4">
+        <source src=" ./static/videos/demo/continuous.mp4" type="video/mp4">
       </video>
     </div>
     <div class="hero-video is-hidden-tablet is-inline-block-mobile"
       style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 101%; height: 101%;">
       <video playsinline autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
-        <source src=" ./static/videos/teaser.mp4" type="video/mp4">
+        <source src=" ./static/videos/demo/continuous.mp4" type="video/mp4">
       </video>
     </div>
     <div class="overlay"></div>
     
     <div style="position: absolute; bottom: 20px; right: 20px; color: white; padding: 10px 15px; border-radius: 8px; font-size: 0.9rem; max-width: 380px; z-index: 10; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
-      <div style="margin-bottom: 5px;"><sup>*</sup> Equal contribution; order decided by coin toss.</div>
-      <div><sup>†</sup> Equal advising; order mirrors the coin toss, with the other lab listed last.</div>
+      <div style="margin-bottom: 5px;"><sup>*</sup> Equal contribution</div>
+      <div><sup>1</sup> Carnegie Mellon University</div>
+      <div><sup>2</sup> Bosch Center for Artificial Intelligence</div>
     </div>
   
   <div class="hero-head is-hidden-mobile">
@@ -78,18 +79,20 @@
   <div class="hero-body">
     <div class="container has-text-centered">
       <h1 class="title is-1 publication-title is-size-1-mobile" style="font-size: 9rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
-        BeyondMimic
+        Maintitle
       </h1>
       <h1 class="subtitle is-1 publication-title is-size-4-mobile" style="font-size: 3.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
-        From Motion Tracking to Versatile Humanoid Control via Guided Diffusion
+        Learning Adaptive High-Platform Traversal for Humanoid Robots
       </h1>
       <p style="font-size: 1.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
-        <a href="https://qiayuanl.github.io/">Qiayuan Liao<sup>*</sup></a>, 
-        <a href="https://www.takaratruong.com/">Takara Truong<sup>*</sup></a>, 
-        <a href="">Xiaoyu Huang<sup>*</sup></a>,
-        <a href="https://guytevet.github.io/">Guy Tevet</a>,
-        <a href="https://hybrid-robotics.berkeley.edu/koushil/">Koushil Sreenath<sup>†</sup></a>,
-        <a href="https://tml.stanford.edu/people/karen-liu">C. Karen Liu<sup>†</sup></a>
+        <a href="https://scholar.google.com/citations?user=7ZZ9fOIAAAAJ&hl=zh-CN">Yikai Wang</a><sup>*1</sup>, 
+        <a href="https://www.linkedin.com/in/tingxuan-leng/">Tingxuan Leng</a><sup>*1</sup>, 
+        <a href="https://linchangyi1.github.io/">Changyi Lin</a><sup>*1</sup>,
+        <a href="https://shiqiliu-67.github.io/">Shiqi Liu</a><sup>1</sup>,
+        <a href="https://scholar.google.com/citations?hl=en&user=KxrnkosAAAAJ&view_op=list_works&sortby=pubdate">Shir Simon</a><sup>2</sup>,
+        <a href="https://scholar.google.com/citations?user=LYt_2MgAAAAJ&hl=en">Bingqing Chen</a>,<sup>2</sup>
+        <a href="https://jonfranc.com/">Jonathan Francis</a><sup>1,2</sup>
+        <a href="https://www.meche.engineering.cmu.edu/directory/bios/zhao-ding.html">Ding Zhao</a><sup>1</sup>
       </p>
     </div>
   </div>
@@ -113,27 +116,25 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p class="abstract-text" style="font-size: 0.95rem; line-height: 1.5;">
-            Learning skills from human motions offers a promising path toward generalizable policies for whole-body humanoid control, yet two key cornerstones are missing: (1) a scalable, high-quality motion tracking framework that faithfully transforms kinematic references into robust, extremely dynamic motions on real hardware, and (2) a distillation approach that can effectively learn these motion primitives and compose them to solve downstream tasks. We address these gaps with <strong> BeyondMimic, a real-world framework to learn from human motions for versatile and naturalistic humanoid control via guided diffusion </strong>. Our framework provides a <strong> motion tracking pipeline, capable of challenging skills such as jumping spins, sprinting, and cartwheel </strong> with state-of-the-art motion quality. Beyond mimicking, we further introduce a <strong> unified diffusion policy that enables zero-shot task-specific control at test time using simple cost functions </strong>. Deployed on hardware, BeyondMimic performs diverse tasks including waypoint navigation, joystick teleoperation, and obstacle avoidance, bridging sim-to-real motion tracking and flexible synthesis of human motion primitives for whole-body control.
-          </p>
+            Restricting humanoid robots to feet-based locomotion limits traversal in environments with tall vertical ledges......       </p>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-
 <section class="section">
   <div class="container">
-    <h2 class="title is-2" style="text-align: center;">Our open-source motion tracking pipline can track motion stably and repeatably</h2>
+    <h2 class="title is-2" style="text-align: center;"> Our proposed system enables adaptive, perceptive, and context-aware traversal with stability and repeatability. </h2>
     <div class="columns is-centered">
       <div class="column is-full-width is-centered has-text-centered">
-        <video autoplay loop muted playsinline src="./static/videos/motion_tracking/prep_IMG_2643.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video autoplay loop muted playsinline src="./static/videos/demo/continuous.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
       <div class="column is-full-width is-centered has-text-centered">
-        <video autoplay loop muted playsinline src="./static/videos/motion_tracking/prep_IMG_2669.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video autoplay loop muted playsinline src="./static/videos/demo/crawl_traversal.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
         <div class="column is-full-width is-centered has-text-centered">
-        <video autoplay loop muted playsinline src="./static/videos/motion_tracking/prep_IMG_2661.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video autoplay loop muted playsinline src="./static/videos/" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
   </div>
@@ -141,25 +142,25 @@
 
 <section class="section">
   <div class="container">
-    <h2 class="title is-2" style="text-align: center;">Policies trained with BeyondMimic pipeline on the LAFAN1 Dataset</h2>
+    <h2 class="title is-2" style="text-align: center;"> Climbing with strong robustness and adaptability to environments.</h2>
     <p class="has-text-centered" style="font-size: 1.2rem; margin-bottom: 2rem;">
-      Below are 24 clips from policies trained on 14 distinct ~3-minute sequences, all using <strong>exactly the same MDP setup and hyperparameters<strong></strong>.
+      <!-- Below are 24 clips from policies trained on 14 distinct ~3-minute sequences, all using <strong>exactly the same MDP setup and hyperparameters<strong></strong>. -->
     </p>
     <div id="results-carousel" class="carousel results-carousel">
       <!-- highlights -->
       <div class="column is-full-width is-centered has-text-centered">
         <!-- cartwheel -->
-        <video autoplay loop muted playsinline src="./static/videos/motion_tracking/prep_IMG_4081.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video autoplay loop muted playsinline src="./static/videos/single/map_robustness.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
         <!-- running -->
-        <video autoplay loop muted playsinline src="./static/videos/motion_tracking/prep_IMG_2747.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video autoplay loop muted playsinline src="./static/videos/single/soft_robustness.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
       <div class="column is-full-width is-centered has-text-centered">
         <!-- jumping 360 -->
-        <video autoplay loop muted playsinline src="./static/videos/motion_tracking/prep_IMG_2736.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video autoplay loop muted playsinline src="./static/videos/single/height_adapt.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
         <!-- fall recovery -->
-        <video autoplay loop muted playsinline src="./static/videos/motion_tracking/prep_IMG_2704.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video autoplay loop muted playsinline src="./static/videos/single/angle_adapt.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
-
+      
       <!-- dance -->
       <div class="column is-full-width is-centered has-text-centered">
         <!-- shuffling -->
