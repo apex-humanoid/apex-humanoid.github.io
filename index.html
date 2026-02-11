@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="description" content="Learning Adaptive High-Platform Traversal for Humanoid Robots">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>BeyondMimic</title>
+  <title>APEX</title>
   
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -105,7 +105,8 @@
       <div class="column is-half">
         <h2 class="title is-2">Video</h2>
         <div class="publication-video" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-          <iframe src="https://www.youtube.com/embed/RS_MtKVIAzY"
+          <!-- video link youtube below-->
+          <iframe src=""
                   frameborder="0"
                   allow="autoplay; encrypted-media"
                   allowfullscreen
@@ -116,8 +117,24 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p class="abstract-text" style="font-size: 0.95rem; line-height: 1.5;">
-            Restricting humanoid robots to feet-based locomotion limits traversal in environments with tall vertical ledges......       </p>
-        </div>
+            Humanoid locomotion has advanced rapidly with deep reinforcement learning (DRL), enabling robust feet-based 
+            traversal over uneven terrain. Yet platforms beyond leg length remain largely out of reach because current RL 
+            training paradigms often converge to jumping-like solutions that are high-impact, torque-limited, and unsafe 
+            for real-world deployment.
+            To address this gap, we propose \<strong>APEX</strong>, a system for perceptive, climbing-based high-platform 
+            traversal that composes terrain-conditioned behaviors: climb-up and climb-down at vertical edges, walking or 
+            crawling on the platform, and stand-up and lie-down for posture reconfiguration.
+            Central to our approach is a generalized ratchet progress reward for learning contact-rich, goal-reaching maneuvers. 
+            It tracks best-so-far task progress and penalizes non-improving steps, which provides dense yet velocity-free 
+            supervision, enabling efficient exploration under strong safety regularization.
+            Based on it, we train LiDAR-based full-body maneuver policies and reduce the sim-to-real perception gap via a 
+            dual strategy: training-time modeling of mapping artifacts and deployment-time filtering and inpainting of 
+            elevation maps.
+            Finally, we distill all six skills into a single policy that autonomously selects behaviors and transitions 
+            from local geometry and commands.
+            Experiments on a 29-DoF Unitree G1 humanoid demonstrate zero-shot sim-to-real traversal of 0.8m platforms (over 
+            114% of leg length), with robust adaptation to platform height and initial pose and smooth, stable multi-skill 
+            transitions.        </div>
       </div>
     </div>
   </div>
@@ -134,7 +151,7 @@
         <video autoplay loop muted playsinline src="./static/videos/demo/crawl_traversal.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
         <div class="column is-full-width is-centered has-text-centered">
-        <video autoplay loop muted playsinline src="./static/videos/" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <video autoplay loop muted playsinline src="./static/videos/crawl_continuous.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
   </div>
@@ -227,76 +244,6 @@
         <video autoplay loop muted playsinline src="./static/videos/motion_tracking/prep_IMG_2745.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
         <!-- march -->
         <video autoplay loop muted playsinline src="./static/videos/motion_tracking/prep_IMG_2686.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="section">
-  <div class="container">
-    <h2 class="title is-2" style="text-align: center;">Beyond mimicking, we distill selected policies into a single diffusion model with test-time guidance for zero-shot downstream tasks</h2>
-    <p class="has-text-centered" style="font-size: 1.2rem; margin-bottom: 2rem;">
-      Arbitrary joystick control, waypoint following, and obstacle avoidance<br>
-      <em>(Mocap is used for determining locations of waypoints, obstacles, and for helping state estimation)</em>
-    </p>
-    <div id="results-carousel" class="carousel results-carousel">
-      <!-- highlights -->
-      <div class="column is-full-width is-centered has-text-centered">
-        <!-- sdf walking 1-->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1921.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <!-- box throwing 0-->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1909.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div>
-      <div class="column is-full-width is-centered has-text-centered">
-        <!-- waypoint + walking + human -->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1876.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <!-- joystick jogging -->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1915.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div>
-
-      <!-- others -->
-      <div class="column is-full-width is-centered has-text-centered">
-        <!-- joystick + perturbation 1 -->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1890.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <!-- sdf walking 0-->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1918.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div>
-      <div class="column is-full-width is-centered has-text-centered">
-        <!-- uncontdition + perturbation -->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1895.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <!-- joystick + perturbation 0 -->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1893.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div>
-      <div class="column is-full-width is-centered has-text-centered">
-        <!-- waypoint + perturbation -->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1867.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <!-- waypoint + jogging + human -->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1881.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div>
-      <div class="column is-full-width is-centered has-text-centered">
-        <!-- natural walking joystick -->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1883.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <!-- box throwing 1-->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1907.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div>
-      <div class="column is-full-width is-centered has-text-centered">
-        <!-- sdf jogging 0 -->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1926.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <!-- sdf jogging 1 -->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1934.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div>
-      <div class="column is-full-width is-centered has-text-centered">
-        <!-- joystick jogging -->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1890.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <!-- waypoint0 -->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1868.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-      </div>
-      <div class="column is-full-width is-centered has-text-centered">
-        <!-- waypoint1 -->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1869.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
-        <!-- waypoint2 -->
-        <video autoplay loop muted playsinline src="./static/videos/diffusion/prep_C1870.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
     </div>
   </div>
