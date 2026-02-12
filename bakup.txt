@@ -180,9 +180,7 @@
         <!-- fall recovery -->
         <video autoplay loop muted playsinline src="./static/videos/single/angle_adapt.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
       </div>
-
-
-      
+    
     </div>
   </div>
 </section>
