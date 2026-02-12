@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Learning Adaptive High-Platform Traversal for Humanoid Robots">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>APEX</title>
+  
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <section class="hero is-link is-fullheight video" style="overflow: hidden; position:relative;">
+    <div class="hero-video" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 101%; height: 101%;">
+      <video playsinline autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
+        <source src=" ./static/videos/demo/continuous.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-video is-hidden-tablet is-inline-block-mobile"
+      style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 101%; height: 101%;">
+      <video playsinline autoplay muted loop style="width: 100%; height: 100%; object-fit: cover;">
+        <source src=" ./static/videos/demo/continuous.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="overlay"></div>
+    
+    <div style="position: absolute; bottom: 20px; right: 20px; color: white; padding: 10px 15px; border-radius: 8px; font-size: 0.9rem; max-width: 380px; z-index: 10; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
+      <div style="margin-bottom: 5px;"><sup>*</sup> Equal contribution</div>
+      <div><sup>1</sup> Carnegie Mellon University</div>
+      <div><sup>2</sup> Bosch Center for Artificial Intelligence</div>
+    </div>
+  
+  <div class="hero-head is-hidden-mobile">
+    <header class="navbar">
+      <div class="container is-size-5">
+        <div class="navbar-menu">
+          <div class="navbar-end">
+            <!-- arxiv -->
+            <a class="navbar-item pl-4 pr-4" href="" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
+              <span class="icon" style="margin-right:5px;">
+                <i class="ai ai-arxiv"></i>
+              </span>
+              <span>arXiv</span>
+            </a>
+            <!-- youtube video -->
+            <a href="" class="navbar-item pl-4 pr-4" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
+              <span class="icon" style="margin-right:5px;">
+                <i class="fab fa-youtube"></i>
+              </span>
+              <span>Video</span>
+            </a>
+            <span class="navbar-item  pl-4 pr-4">
+              <!-- github repo -->
+              <a href="" class="button is-inverted is-large">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title is-1 publication-title is-size-1-mobile" style="font-size: 9rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
+        APEX
+      </h1>
+      <h1 class="subtitle is-1 publication-title is-size-4-mobile" style="font-size: 3.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
+        Learning Adaptive High-Platform Traversal for Humanoid Robots
+      </h1>
+      <p style="font-size: 1.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);">
+        <a href="https://scholar.google.com/citations?user=7ZZ9fOIAAAAJ&hl=zh-CN">Yikai Wang</a><sup>*1</sup>, 
+        <a href="https://www.linkedin.com/in/tingxuan-leng/">Tingxuan Leng</a><sup>*1</sup>, 
+        <a href="https://linchangyi1.github.io/">Changyi Lin</a><sup>*1</sup>,
+        <a href="https://shiqiliu-67.github.io/">Shiqi Liu</a><sup>1</sup>,
+        <a href="https://scholar.google.com/citations?hl=en&user=KxrnkosAAAAJ&view_op=list_works&sortby=pubdate">Shir Simon</a><sup>2</sup>,
+        <a href="https://scholar.google.com/citations?user=LYt_2MgAAAAJ&hl=en">Bingqing Chen</a>,<sup>2</sup>
+        <a href="https://jonfranc.com/">Jonathan Francis</a><sup>1,2</sup>
+        <a href="https://www.meche.engineering.cmu.edu/directory/bios/zhao-ding.html">Ding Zhao</a><sup>1</sup>
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-half">
+        <h2 class="title is-2">Video</h2>
+        <div class="publication-video" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+          <!-- video link youtube below-->
+          <iframe src=""
+                  frameborder="0"
+                  allow="autoplay; encrypted-media"
+                  allowfullscreen
+                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe>
+        </div>
+      </div>
+      <div class="column is-half">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+          <p class="abstract-text" style="font-size: 0.95rem; line-height: 1.5;">
+            Humanoid locomotion has advanced rapidly with deep reinforcement learning (DRL), enabling robust feet-based 
+            traversal over uneven terrain. Yet platforms beyond leg length remain largely out of reach because current RL 
+            training paradigms often converge to jumping-like solutions that are high-impact, torque-limited, and unsafe 
+            for real-world deployment.
+            To address this gap, we propose \<strong>APEX</strong>, a system for perceptive, climbing-based high-platform 
+            traversal that composes terrain-conditioned behaviors: climb-up and climb-down at vertical edges, walking or 
+            crawling on the platform, and stand-up and lie-down for posture reconfiguration.
+            Central to our approach is a generalized ratchet progress reward for learning contact-rich, goal-reaching maneuvers. 
+            It tracks best-so-far task progress and penalizes non-improving steps, which provides dense yet velocity-free 
+            supervision, enabling efficient exploration under strong safety regularization.
+            Based on it, we train LiDAR-based full-body maneuver policies and reduce the sim-to-real perception gap via a 
+            dual strategy: training-time modeling of mapping artifacts and deployment-time filtering and inpainting of 
+            elevation maps.
+            Finally, we distill all six skills into a single policy that autonomously selects behaviors and transitions 
+            from local geometry and commands.
+            Experiments on a 29-DoF Unitree G1 humanoid demonstrate zero-shot sim-to-real traversal of 0.8m platforms (over 
+            114% of leg length), with robust adaptation to platform height and initial pose and smooth, stable multi-skill 
+            transitions.        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;"> Our proposed system enables adaptive, perceptive, and context-aware traversal with stability and repeatability. </h2>
+    <div class="columns is-centered">
+      <div class="column is-full-width is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./static/videos/demo/continuous.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./static/videos/demo/crawl_traversal.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+        <div class="column is-full-width is-centered has-text-centered">
+        <video autoplay loop muted playsinline src="./static/videos/crawl_continuous.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;"> Climbing with strong robustness and adaptability to environments.</h2>
+    <p class="has-text-centered" style="font-size: 1.2rem; margin-bottom: 2rem;">
+      <!-- Below are 24 clips from policies trained on 14 distinct ~3-minute sequences, all using <strong>exactly the same MDP setup and hyperparameters<strong></strong>. -->
+    </p>
+    <div id="results-carousel" class="carousel results-carousel">
+      <!-- highlights -->
+      <div class="column is-full-width is-centered has-text-centered">
+        <!-- cartwheel -->
+        <video autoplay loop muted playsinline src="./static/videos/single/map_robustness.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <!-- running -->
+        <video autoplay loop muted playsinline src="./static/videos/single/soft_robustness.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+      <div class="column is-full-width is-centered has-text-centered">
+        <!-- jumping 360 -->
+        <video autoplay loop muted playsinline src="./static/videos/single/height_adapt.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <!-- fall recovery -->
+        <video autoplay loop muted playsinline src="./static/videos/single/angle_adapt.mp4" poster="./static/videos/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+      </div>
+
+
+      
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>Page template borrowed from <a href="https://nerfies.github.io/"><span class="dnerf">Nerfies</span></a>, <a href="https://beyondmimic.github.io/">BeyondMimic</a>.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
