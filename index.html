@@ -114,19 +114,15 @@
             traversal over uneven terrain. Yet platforms beyond leg length remain largely out of reach because current RL 
             training paradigms often converge to jumping-like solutions that are high-impact, torque-limited, and unsafe 
             for real-world deployment.
-
             To address this gap, we propose <strong>APEX</strong>, a system for <strong>perceptive, climbing-based high-platform 
             traversal</strong> that composes terrain-conditioned behaviors: climb-up and climb-down at vertical edges, walking or 
             crawling on the platform, and stand-up and lie-down for posture reconfiguration.
-            
             Central to our approach is a generalized ratchet progress reward for learning contact-rich, goal-reaching maneuvers. 
             It tracks best-so-far task progress and penalizes non-improving steps, which provides dense yet velocity-free 
             supervision, enabling efficient exploration under strong safety regularization.
-
             Based on it, we train LiDAR-based full-body maneuver policies and reduce the sim-to-real perception gap via a 
             dual strategy: training-time modeling of mapping artifacts and deployment-time filtering and inpainting of 
             elevation maps.
-            
             Finally, we distill all six skills into a single policy that autonomously selects behaviors and transitions 
             from local geometry and commands.
             Experiments on a 29-DoF Unitree G1 humanoid demonstrate zero-shot sim-to-real traversal of 0.8m platforms (over 
