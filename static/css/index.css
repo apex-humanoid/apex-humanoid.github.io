@@ -55,6 +55,24 @@ body {
     font-family: 'Google Sans', sans-serif;
 }
 
+.publication-venue-note {
+  margin: 0.2rem auto 1.25rem;
+  color: #fff;
+  font-family: 'Google Sans', sans-serif;
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 768px) {
+  .publication-venue-note {
+    margin-bottom: 0.9rem;
+    font-size: 1.1rem;
+  }
+}
+
 .publication-authors {
     font-family: 'Google Sans', sans-serif;
 }
@@ -174,3 +192,61 @@ body {
   margin-top: 0.5em;
 }
 
+.bonus-demo {
+  padding-top: 1.5rem;
+}
+
+.bonus-demo-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.bonus-demo-label {
+  margin-bottom: 0.5rem;
+  color: #888;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.bonus-demo-description {
+  margin: -0.75rem auto 1.5rem;
+  color: #666;
+  font-size: 1rem;
+}
+
+.bonus-demo-video {
+  display: block;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.bonus-demo-images {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  max-width: 400px;
+  margin: 0.75rem auto 0;
+}
+
+.bonus-demo-images img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 9 / 16;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .bonus-demo-inner {
+    padding-top: 2rem;
+  }
+
+  .bonus-demo-images {
+    gap: 0.5rem;
+  }
+}
