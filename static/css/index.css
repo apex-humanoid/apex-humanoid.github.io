@@ -55,22 +55,21 @@ body {
     font-family: 'Google Sans', sans-serif;
 }
 
-.publication-venue-note {
-  margin: 0.2rem auto 1.25rem;
-  color: #fff;
-  font-family: 'Google Sans', sans-serif;
-  font-size: 1.45rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  line-height: 1.2;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+.publication-summary {
+  background: #fff;
 }
 
-@media screen and (max-width: 768px) {
-  .publication-venue-note {
-    margin-bottom: 0.9rem;
-    font-size: 1.1rem;
-  }
+.publication-venue-logo {
+  display: block;
+  width: clamp(12rem, 24vw, 15rem);
+  max-width: 100%;
+  margin: 0 auto 2.5rem;
+}
+
+.publication-venue-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .publication-authors {
